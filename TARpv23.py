@@ -1,3 +1,23 @@
+from random import *
+#6
+try:
+    aeg = float(input("Mitu tundi kulus sõiduks? ")) #aeg ei saa olla 0
+    teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+    kiirus = teepikkus/aeg
+    print("Sinu kiirus oli " + str(kiirus) + " km/h")
+except:
+    print("Viga andmetüübiga")
+
+
+
+
+#10
+P=randint(1,5)
+hind=12.90
+hind*=1.1 #hind koos jätatega
+osa=round(hind/P,2)
+print("Iga sõber maksab: ",osa)
+
 print("Tere maailm!")
 #1
 #nimi=input("Mis on sinu nimi?") #comment
