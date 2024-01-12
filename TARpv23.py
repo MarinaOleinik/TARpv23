@@ -1,6 +1,13 @@
 from random import *
 #6
 try:
+    pass
+except :
+    pass
+
+
+
+try:
     aeg = float(input("Mitu tundi kulus sõiduks? ")) #aeg ei saa olla 0
     teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
     kiirus = teepikkus/aeg
@@ -8,6 +15,7 @@ try:
 except:
     print("Viga andmetüübiga")
 
+print()
 
 
 
