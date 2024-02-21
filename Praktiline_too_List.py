@@ -1,5 +1,89 @@
 from random import *
 from string import *
+from time import sleep
+#1v for
+for i in range(100): #i=0..99
+    sym=i*"#"
+    print(sym)
+    sleep(random())
+    
+print()
+
+lst = []
+v = int(input("Kui palju numbreid te nimekirjas soovite?"))
+for i in range(v):
+    v = int(input("Arv: "))
+    sleep(1)
+    lst.append(v)
+suur = 0
+for el in lst:
+    if el > suur:
+        suur = el
+lst[lst.index(suur)] = suur / len(lst)
+print(f"suur {suur}, indeks on {lst.index(suur) + 1}\n{lst}")
+
+#11
+
+#2v sort
+lst = []
+v = int(input("Kui palju numbreid te nimekirjas soovite?"))
+for i in range(v):
+    v = int(input("Arv: "))
+    lst.append(v)
+lst.sort()
+suur = lst[-1]
+
+lst[lst.index(suur)] = suur / len(lst)
+print(f"suur {suur}, indeks on {lst.index(lst[-1]) + 1}\n{lst}")
+
+
+
+
+
+numbers = input("Введите числа через пробел: ").split()
+numbers = list(map(int, numbers))
+if not numbers:
+    print("Ошибка: список чисел пуст.")
+else:
+    max_number = max(numbers)
+numbers[numbers.index(max_number)] = max_number / len(numbers)
+print("Список после замены:", numbers)
+
+
+
+
+
+#6 
+nimekirja=[]
+n=int(input("Nimekirja suurus: "))
+for i in range(n):
+    arv=randint(10,100)
+    nimekirja.append(arv)
+print(nimekirja)
+maksimum=max(nimekirja)
+vajavarv=maksimum/len(nimekirja)
+nimekirja[nimekirja.index(maksimum)]=vajavarv
+print(nimekirja)
+
+nimekirja1=[]
+nimekirja=[]
+n=int(input("Nimekirja suurus: "))
+for i in range(n):
+    arv=randint(10,100)
+    nimekirja1.append(arv)
+    nimekirja.append(arv)
+maksimum=nimekirja[0]
+for arv in nimekirja:
+    if arv>maksimum:
+        maksimum=arv
+vajavarv=maksimum/len(nimekirja)
+for i in range(len(nimekirja)):
+    if nimekirja[i]==maksimum:
+        nimekirja[i]=vajavarv
+print(nimekirja1)
+print(nimekirja)
+
+
 #5 Vahetus
 rida=[]
 N=randint(2,25)
