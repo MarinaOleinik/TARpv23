@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f4335b03-05ea-40f4-b442-43b6ece454de</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FunktsioonideKasutamine.py</StartupFile>
+    <StartupFile>Palgad.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -24,7 +24,9 @@
     <Compile Include="10_ulesanded.py" />
     <Compile Include="FunktsioonideKasutamine.py" />
     <Compile Include="List_.py" />
+    <Compile Include="MoodulPalgadele.py" />
     <Compile Include="MyModul.py" />
+    <Compile Include="Palgad.py" />
     <Compile Include="Praktiline_too_List.py" />
     <Compile Include="TARpv23.py" />
     <Compile Include="TooVigadega.py" />
