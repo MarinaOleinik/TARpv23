@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f4335b03-05ea-40f4-b442-43b6ece454de</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Palgad.py</StartupFile>
+    <StartupFile>Failidega_too.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="10_ulesanded.py" />
+    <Compile Include="Failidega_too.py" />
     <Compile Include="FunktsioonideKasutamine.py" />
     <Compile Include="List_.py" />
     <Compile Include="MoodulPalgadele.py" />
@@ -32,6 +33,9 @@
     <Compile Include="TooVigadega.py" />
     <Compile Include="Valiklaused.py" />
     <Compile Include="VigadeOtsing.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Paevad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
