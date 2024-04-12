@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f4335b03-05ea-40f4-b442-43b6ece454de</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Failidega_too.py</StartupFile>
+    <StartupFile>Vorrand.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,11 +30,14 @@
     <Compile Include="Palgad.py" />
     <Compile Include="Praktiline_too_List.py" />
     <Compile Include="TARpv23.py" />
+    <Compile Include="TkinteriKasutamine.py" />
     <Compile Include="TooVigadega.py" />
     <Compile Include="Valiklaused.py" />
     <Compile Include="VigadeOtsing.py" />
+    <Compile Include="Vorrand.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="icon.ico" />
     <Content Include="Paevad.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
