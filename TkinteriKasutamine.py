@@ -52,7 +52,7 @@ f=Frame(aken)
 var=IntVar() #StringVar()
 e=Radiobutton(f,text="Esimene",variable=var,value=1,font="Arial 20",command=valik)
 t=Radiobutton(f,text="Teine",variable=var,value=2,font="Arial 20",command=valik)
-k_=Radiobutton(f,text="Kolmas",variable=var,value=3,font="Arial 20",command=valik)
+k_=Radiobutton(f,text="Kolmas",variable=var,value=3,font="Arial 20",command=lambda:valik)
 nupp.bind("<Button-3>",vajuta_) #PKM
 textbox.bind("<Return>",tst_psse) #Enter
 

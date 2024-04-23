@@ -22,9 +22,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="10_ulesanded.py" />
+    <Compile Include="Canvas_kasutamine.py" />
     <Compile Include="Failidega_too.py" />
     <Compile Include="FunktsioonideKasutamine.py" />
     <Compile Include="List_.py" />
+    <Compile Include="module1.py" />
     <Compile Include="MoodulPalgadele.py" />
     <Compile Include="MyModul.py" />
     <Compile Include="Palgad.py" />

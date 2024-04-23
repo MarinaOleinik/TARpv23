@@ -105,14 +105,15 @@ def kala():
     y9=[1]*len(x9)
     x10 = np.arange(3, 4, 0.5)#min max step
     y10=[3]*len(x10)
-    plt.figure()
-    for i in range(1,11):
-        x=eval(f"x{i}")
-        plt.plot(x,eval(f"y{i}"),"b-o")
-    plt.title('Vaal')
+    plt.figure(facecolor="lightgreen")   
+    plt.title('Vaal')   
     plt.ylabel('y')
     plt.xlabel('x')
     plt.grid(True)
+    ax=plt.axes()
+    ax.set_facecolor("lightblue")
+    for i in range(1,11):
+        plt.plot(eval(f"x{i}"),eval(f"y{i}"),"b-o")
     plt.show()
 def vihmavari(): pass
 def konn(): pass
