@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f4335b03-05ea-40f4-b442-43b6ece454de</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Vorrand.py</StartupFile>
+    <StartupFile>Too_andmebaasiga.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,7 @@
     <Compile Include="Canvas_kasutamine.py" />
     <Compile Include="Failidega_too.py" />
     <Compile Include="FunktsioonideKasutamine.py" />
+    <Compile Include="Json_kasutamine.py" />
     <Compile Include="List_.py" />
     <Compile Include="module1.py" />
     <Compile Include="MoodulPalgadele.py" />
@@ -34,6 +35,7 @@
     <Compile Include="TARpv23.py" />
     <Compile Include="TkinteriKasutamine.py" />
     <Compile Include="TooVigadega.py" />
+    <Compile Include="Too_andmebaasiga.py" />
     <Compile Include="Valiklaused.py" />
     <Compile Include="VigadeOtsing.py" />
     <Compile Include="Vorrand.py" />
