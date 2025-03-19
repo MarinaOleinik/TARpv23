@@ -64,14 +64,14 @@ def graafik(graf:bool,D:float):
         y1=a_*x1**2+b_*x1+c_
         plt.figure()
         plt.plot(x1, y1,'b:d')
-        plt.title('Квадратное уравнение')
+        plt.title('Ruutvõrrand')
         plt.ylabel('y')
         plt.xlabel('x')
         plt.grid(True)
         plt.show()
-        text=f"Вершина параболлы ({x0},{y0})"
+        text=f"Tipp punkt ({x0},{y0})"
     else:
-        text=f"График нет возможности построить"
+        text=f"Graafik ei saa joonistada"
     vastus.configure(text=f"D={D}\n{t}\n{text}")
 t=0
 def veel():
@@ -129,15 +129,15 @@ def figura():
 
 aken=Tk()
 aken.geometry("650x260")
-aken.title("Квадратные уравнения")
+aken.title("Ruutvõrrand")
 f1=Frame(aken,width=650,height=260)
 f1.pack(side=TOP)
 f2=Frame(aken,width=650,height=200)
 f2.pack(side=BOTTOM)
 
-lbl=Label(f1,text="Решение квадратного уравнения",font="Calibri 26", fg="green",bg="lightblue")
+lbl=Label(f1,text="Ruutvõrrandi lahendamine",font="Calibri 26", fg="green",bg="lightblue")
 lbl.pack(side=TOP)
-vastus=Label(f1,text="Решение", height=4,width=60,bg="yellow")
+vastus=Label(f1,text="Lahendamine", height=4,width=60,bg="yellow")
 vastus.pack(side=BOTTOM)
 a=Entry(f1,font="Calibri 26", fg="green",bg="lightblue",width=3)
 a.pack(side=LEFT)#,padx=10,pady=10

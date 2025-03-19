@@ -13,16 +13,16 @@ from random import *
 
 
 #11
-from colorama import *
-init(autoreset = True)
-print(Fore.GREEN+Back.BLUE+'Juubel või ei ole')
-print('Juubel või ei ole')
-ta=date.today().year
-sp=date(int(input("Sünniaasta: ")),int(input("Sünnikuu: ")),int(input("Sünnipäev: "))).year
-if (ta-sp)%5==0:
-    print(Fore.GREEN+"Juubel")
-else:
-    print(Back.BLUE+"Tavaline sünnipäev")
+# from colorama import *
+# init(autoreset = True)
+# print(Fore.GREEN+Back.BLUE+'Juubel või ei ole')
+# print('Juubel või ei ole')
+# ta=date.today().year
+# sp=date(int(input("Sünniaasta: ")),int(input("Sünnikuu: ")),int(input("Sünnipäev: "))).year
+# if (ta-sp)%5==0:
+#     print(Fore.GREEN+"Juubel")
+# else:
+#     print(Back.BLUE+"Tavaline sünnipäev")
 
 #8.2 Poes
 arve_nr= date.today()#datetime.now()

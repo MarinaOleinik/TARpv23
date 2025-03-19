@@ -1,6 +1,7 @@
 from sqlite3 import *
 from sqlite3 import Error
 from os import *
+from telnetlib import PRAGMA_HEARTBEAT
 
 def create_connect(path:str):
     connection=None
@@ -28,10 +29,40 @@ def execute_read_query(connection,query):
     except Error as e:
         print(f"Tekkis viga: {e}")
 def execute_insert_query(connection,data):
-    query="INSERT INTO users(Name,Lname,Age,GenderId) VALUES(?,?,?,?)"
+    columns=columns_from_table(conn)
+    like=mark=""
+    n=len(columns)
+    for c in columns:
+        n-=1
+        if n==0:
+            like+=c
+            mark+="?"
+        else:
+            like+=c+","
+            mark+="?"+","
+    query=f"INSERT INTO users({like}) VALUES({mark})"
     cursor=connection.cursor()
-    cursor.execute(query,data)
+    cursor.execute(query,data)  
     connection.commit()
+def columns_from_table(connection):
+    filename=path.abspath(__file__)
+    dbdir=filename.rstrip('Too_andmebaasiga.py')
+    dbpath=path.join(dbdir,"data.db")
+    conn=create_connect(dbpath)
+    cursor=connection.cursor()
+    cursor.execute("PRAGMA table_info('users')") #SELECT name FROM sqlite_master WHERE type='table';")
+    column_names = [i[1] for i in cursor.fetchall()]
+    return column_names
+def execute_drop_table(connection, table):
+    try:
+        cursor=connection.cursor()
+        cursor.execute(f"DROP TABLE IF NOT EXISTS {table}")
+        connection.commit()
+        print(f"Tabel {table} oli kustutatud")
+    except Error as e :
+        print(f"Tekkis viga: {e}")
+        
+        
 
 create_users_table="""
 CREATE TABLE IF NOT EXISTS users(
@@ -78,4 +109,5 @@ genders=execute_read_query(conn,select_users_gender)
 print("Kautajate tabel 2:")
 for gender in genders:
     print(gender)
+
 
